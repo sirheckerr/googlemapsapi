@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Google Maps Project</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  
+    
+    <script async
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfLjUDuJDtrVW3MwlLpWqFtFScg9v8j6o&callback=foo&libraries=places">
+    </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      Get Outside! Visit a Park.
+    </h1>
+  <div id="map"></div>
+    <div id="debug"></div>
+    <h5>
+      Change radius:
+    </h5>
+    
+    <button onclick="changeRadiusU()" id="radiusUp">
+      +
+    </button>
+    
+    <button onclick="changeRadiusD()" id="radiusDown">
+      -
+    </button>
+    
+  </body>
+</html>
